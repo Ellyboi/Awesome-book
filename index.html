@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Books</title>
-</head>
-<body>
-  <main>
-    <div>
-      <h1>Awesome Books</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet"
+      />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title> Awesome Books </title>
+  </head>
+  <body>
+    <div class="books-container">
+      <h1 class="first-title"> List Awesome Books </h1>
+      <div class="container-book-list" id="container-book-list">
+        <div class="load-books-table"> </div>
+      </div>
     </div>
-  </main>
-  <script src="index.js"></script>
-</body>
+	
+    <fieldset></fieldset>
+	
+    <form class="form" id="form">
+      <h1 class="add-new-book-title"> Add a new book </h1>
+      <div>
+        <input class="book-title-input" type="text" id="title" placeholder="Title" required />
+      </div>
+      <div>
+        <input class="book-author-input" type="text" id="author" placeholder="Author" required />
+      </div>
+
+      <button class="add-book-button" type="submit"> Add </button>
+    </form>
+	
+    <script src="index.js"></script>
+  </body>
 </html>
