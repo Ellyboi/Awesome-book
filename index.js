@@ -93,4 +93,4 @@ document.querySelector('#container-book-list').addEventListener('click', (e) => 
   const idString = arrValues[arrValues.length - 1];
   const id = parseInt(idString, 10);
   store.removeBook(id);
-});
+});n
