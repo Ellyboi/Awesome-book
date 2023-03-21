@@ -191,7 +191,7 @@ If you like this project, let us know, please!
 
 ## 📝 License <a name="license"></a>
 
-This project is <a href="https://github.com/Tessyrich/Awesome-books/blob/day-0/LICENSE.md"> MIT </a>
+This project is <a href="https://github.com/Ellyboi/Awesome-book/blob/feature-branch/.LICENSE"> MIT </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
