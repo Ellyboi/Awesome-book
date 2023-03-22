@@ -45,6 +45,7 @@ class UI {
   static displayAllBooks() {
     const awesomeBooks = store.getListBooks();
     awesomeBooks.forEach((book) => UI.addBookList(book));
+    UI.hideOrRemoveFieldet();
   }
 
   static addBookList(book) {
@@ -68,6 +69,19 @@ class UI {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
   }
+
+  static hideOrRemoveFieldet() {
+    if (store.getListBooks().length === 0) {
+      document.querySelector('#fieldset').classList.add('hide');
+    } else {
+      document.querySelector('#fieldset').classList.remove('hide');
+    }
+
+    document.addEventListener('DOMContentLoaded', UI.displayAllBooks);
+    document.querySelector('.books-container').classList.remove('hide');
+    document.querySelector('.form').classList.add('hide');
+    document.querySelector('.section-contact-info').classList.add('hide');
+  }
 }
 
 document.addEventListener('DOMContentLoaded', UI.displayAllBooks);
@@ -84,6 +98,7 @@ document.querySelector('#form').addEventListener('submit', (e) => {
   UI.addBookList(book);
   store.addBook(book);
   UI.clearFields();
+  UI.hideOrRemoveFieldet();
 });
 
 document.querySelector('#container-book-list').addEventListener('click', (e) => {
