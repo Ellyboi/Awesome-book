@@ -17,7 +17,7 @@ fieldset {
 
 .books-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: gitcolumn;
   align-items: center;
   margin-bottom: 55px;
 }
@@ -26,7 +26,7 @@ fieldset {
   font-family: 'Lato', sans-serif;
   border: none;
   cursor: pointer;
-  height: 21px;
+  height: 20px;
   width: 70px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
@@ -36,7 +36,7 @@ fieldset {
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 552px;
+  max-width: 550px;
   line-height: 200%;
 }
 
@@ -50,10 +50,61 @@ fieldset {
 }
 
 .first-title {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 400;
 }
 
 .book-row:nth-child(even) {
   background-color: rgb(225, 225, 225);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin-top: 40px;
+}
+
+.add-new-book-title {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.book-title-input {
+  height: 30px;
+  width: 420px;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+}
+
+.hide {
+  display: none;
+}
+
+.book-author-input {
+  height: 30px;
+  width: 420px;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+}
+
+.add-book-button {
+  border: none;
+  height: 30px;
+  width: 70px;
+  font-family: 'Lato', sans-serif;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  cursor: pointer;
+  position: relative;
+  left: 180px;
 }
