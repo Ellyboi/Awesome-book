@@ -4,15 +4,7 @@ body {
 }
 
 fieldset {
-  background-color: white;
-  width: 40vw;
-}
-
-.line {
-  height: 1px;
-  width: 10vw;
   background-color: black;
-  align-items: center;
 }
 
 .books-container {
