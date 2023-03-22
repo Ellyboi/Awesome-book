@@ -4,7 +4,15 @@ body {
 }
 
 fieldset {
+  background-color: white;
+  width: 40vw;
+}
+
+.line {
+  height: 1px;
+  width: 10vw;
   background-color: black;
+  align-items: center;
 }
 
 .books-container {
@@ -75,10 +83,6 @@ fieldset {
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
 }
 
-.hide {
-  display: none;
-}
-
 .book-author-input {
   height: 30px;
   width: 420px;
@@ -99,4 +103,113 @@ fieldset {
   cursor: pointer;
   position: relative;
   left: 180px;
+}
+
+.nav-bar-container {
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px;
+  margin: 0 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+  padding: 10px;
+}
+
+.menus ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+}
+
+.main-logo a {
+  text-decoration: none;
+}
+
+.menus ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.vertical-line {
+  display: inline-block;
+  border-left: 1px solid #ccc;
+  margin: 0 10px;
+  height: 20px;
+}
+
+.main-logo a h3 {
+  color: black;
+  margin: 0;
+}
+
+.date-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.date-container p {
+  margin-right: 15px;
+}
+
+.section-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.first-description-contact {
+  margin-bottom: 0;
+}
+
+.second-description-contact {
+  margin-top: 5px;
+  position: relative;
+  right: 120px;
+}
+
+.contact-list li {
+  padding-bottom: 4px;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px;
+  margin: 0 10px;
+  position: fixed;
+  width: 97%;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.text-footer-container {
+  margin: 0 50px;
+  height: 50px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.text-footer-container .text-copyright {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
