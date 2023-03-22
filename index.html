@@ -14,16 +14,49 @@
     <title> Awesome Books </title>
   </head>
   <body>
-    <div class="books-container">
-      <h1 class="first-title"> List Awesome Books </h1>
-      <div class="container-book-list" id="container-book-list">
-        <div class="load-books-table"> </div>
+    <section class="nav-bar-container">
+      <div class="nav-bar">
+        <div class="main-logo">
+          <a href="#"><h3>Awesome Books</h3></a>
+        </div>
+        <nav class="menus">
+          <ul>
+            <li>
+              <a href="#" id="book-list-menu"> List </a>
+            </li>
+            <li>
+              <span class="vertical-line"></span>
+            </li>
+            <li>
+              <a href="#" id="add-new-book-menu"> Add new </a>
+            </li>
+            <li>
+              <span class="vertical-line"></span>
+            </li>
+            <li>
+              <a href="#" id="contact-menu"> Contact </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </section>
+
+    <div class="date-container">
+      <p id="date"></p>
+    </div>  
+
+    <section class="books-container">
+      <h1 class="first-title"> List Awesome Books </h1>
+      <fieldset class="hide" id="fieldset">
+        <div class="container-book-list" id="container-book-list">
+          <div class="load-books-table"> </div>
+        </div>
+      </fieldset>
+    </section>
 	
-    <fieldset></fieldset>
+    <center><div class="line" ></div></center>
 	
-    <form class="form" id="form">
+    <form class="form hide" id="form">
       <h1 class="add-new-book-title"> Add a new book </h1>
       <div>
         <input class="book-title-input" type="text" id="title" placeholder="Title" required />
@@ -31,10 +64,27 @@
       <div>
         <input class="book-author-input" type="text" id="author" placeholder="Author" required />
       </div>
-
       <button class="add-book-button" type="submit"> Add </button>
     </form>
-	
+
+    <section class="section-contact-info hide">
+      <h1 class="contact-title"> Contact information </h1>
+      <p class="first-description-contact">
+        Do you have any questions or you just want to say "Hello"?
+      </p>
+      <p class="first-description-contact"> You can reach out to us! </p>
+      <ul class="contact-list">
+        <li> Our email: tessy.alexis@mail.com </li>
+        <li> Our phone number:12345678 </li>
+        <li> Our address: Tabarre 48, 321 City, Haiti </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="text-footer-container">
+        <div class="text-copyright"> Copyright @ 2023 Tessy, Eric And Elijah's Enterprise. Rights Reserved. </div>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
