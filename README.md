@@ -40,7 +40,7 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### By Microverse Student, Tessy And Alexis <a name="tech-stack"></a>
+### By Microverse Student, Tessy, Eric And Alexis <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
@@ -130,6 +130,12 @@ To run tests, run the following command:
 👤 **Tessy Rich**
 
 - GitHub: [@githubhandle](https://github.com/Tessyrich)
+
+
+👤 **Eric Antwi**
+
+- GitHub: [@githubhandle](https://github.com/Mylo16)
+
 
 👤 **VITOESI ELIJAH**
 
